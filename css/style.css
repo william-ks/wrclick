@@ -1,0 +1,332 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 0;
+    border: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+html, body{
+    height: 100%;
+}
+
+body{
+    background-color: rgb(22, 22, 22);
+    color: white;
+}
+
+.center{
+    width: 100%;
+
+    margin: 0 auto;
+    max-width: 750px;
+}
+
+.show{
+    display: block;
+}
+
+.hide{
+    display: none;
+}
+
+.space{
+    height: 1000px;
+}
+
+.tittle{
+    text-align: center;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tittle h2{
+    font-size: 45px;
+    font-weight: 300;
+    font-style: italic;
+    min-width: 50%;
+
+    filter: drop-shadow(0px 0px 4px rgba(252, 178, 184, 0.7));
+}
+
+.tittle .line{
+    width: 100%;
+    height: 2px;
+    background-color: white;
+
+    filter: drop-shadow( 2px 2px 1px rgba(252, 178, 184, 1));
+}
+
+ /* header */
+
+header{
+    background-color: rgb(30, 30, 30);
+    padding: 10px 0;
+    width: 100%;
+}
+
+header > .center{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+header .logo{
+    display: none;
+}
+
+header .logo a{
+    padding: 5px 10px;
+
+    text-decoration: none;
+    font-size: 35px;
+    font-weight: 300;
+    color: inherit;
+
+    filter: drop-shadow(2px 2px 3px rgb(27, 163, 204));
+}
+
+/* desktop menu */
+
+header .desktop{
+    display: none;
+}
+
+header .desktop ul{
+    list-style-type: none;
+    display: flex;
+}
+
+header .desktop ul li{
+    margin: 5px 20px;
+}
+
+header .desktop ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 27px;
+    font-weight: 300;
+    padding-bottom: 3px;
+
+    border-bottom: 2px solid transparent;
+
+    filter: drop-shadow(1px 1px 3px rgba(252, 178, 184, 0.4));
+}
+
+header .desktop ul li a:hover{
+    border-color: rgba(252, 178, 184, 0.6);
+    filter: drop-shadow(1px 1px 3px rgba(252, 178, 184, 0.6));
+}
+
+header .desktop ul li a:active{
+    border-color: rgba(252, 178, 184, 1);
+    filter: drop-shadow(1px 1px 3px rgba(252, 178, 184, 1));
+}
+
+/* mobile menu */
+
+header .mobile{
+    display: block;
+    width: 100%;
+}
+
+header .mobile .icon_menu h2{
+    filter: drop-shadow(0px 0px 3px rgba(245, 245, 245, 0.774));
+    text-align: center;
+    font-size: 37px;
+    cursor: pointer;
+}
+
+header .mobile ul{
+    z-index: 999;
+    width: 100%;
+    position: absolute;
+    top: 70px;
+    left: 0;
+
+    list-style-type: none;
+    background-color: rgb(35, 35, 35);
+}
+
+header .mobile ul li{
+    width: 100%;
+    text-align: center;
+    border-bottom: 2px solid rgb(252, 178, 184);
+}
+
+header .mobile ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    font-weight: 300;
+
+    padding: 10px 0;
+    width: 100%;
+    
+    display: inline-block;
+
+    filter: drop-shadow(1px 1px 3px rgba(252, 178, 184, 0.4));
+}
+
+header .mobile ul li a:active{
+    filter: drop-shadow(1px 1px 3px rgba(252, 178, 184, 1));
+}
+
+/* HOME */
+
+/* ABOUT */
+
+.about{
+    width: 100%;
+    padding: 35px 0;
+}
+
+.about .img__profile{
+    width: 100%;
+    max-width: 320px;
+    margin: 35px auto;
+
+}
+
+.about .img__profile img{
+    width: 100%;
+    filter: drop-shadow(1px 2px 3px rgb(252, 63, 79));
+    border-radius: 100%;
+}
+
+.about .text__profile{
+    width: 100%;
+    padding: 0 2%;
+}
+
+.about .text__profile p{
+    font-size: 16px;
+    font-weight: 300;
+    margin: 5px 0;
+    text-align: center;
+}
+
+
+
+
+
+
+
+/* contact */
+
+.contact{
+    width: 100%;
+    padding: 25px 0;
+}
+
+.contact form{
+    margin-top: 20px;
+    width: 100%;
+    padding: 0 2%;
+}
+
+.contact form p{
+    margin-top: 15px;
+    font-weight: 300;
+    color: rgb(179, 179, 179);
+}
+
+.contact input[type=text],
+.contact input[type=email],
+.contact input[type=tel]{
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    margin: 5px 0;
+    padding: 0 10px;
+    font-size: 16px;
+    border-radius: 20px;
+}
+
+.contact textarea{
+    width: 100%;
+    height: 150px;
+    margin: 5px 0;
+    padding: 10px 10px;
+    font-size: 16px;
+    border-radius: 20px;
+    resize: none;
+}
+
+.contact input[type=submit]{
+    width: 100%;
+    max-width: 150px;
+    display: block;
+    margin: 10px auto 0;
+    height: 45px;
+    line-height: 45px;
+    font-size: 27px;
+    font-weight: 500;
+    border-radius: 45px;
+    background: linear-gradient(10deg, rgb(175, 5, 62) , rgb(252, 63, 79) 70%);
+    color: rgba(252, 178, 184, 1);
+    color: white;
+    cursor: pointer;
+}
+
+.contact input[type=submit]:hover{
+    transform: scale(0.96);
+}
+
+.contact input[type=submit]:active{
+    transform: scale(1);
+}
+
+
+
+.social__profile{
+    width: 100%;
+    padding: 20px 2% 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.social__profile a{
+    text-decoration: none;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.social__profile a:first-of-type span{
+    margin: 0 10px;
+}
+
+.social__profile a:first-of-type img{
+    width: 45px;
+}
+
+.social__profile a:last-of-type img{
+    width: 60px;
+}
+
+.social__profile a:hover{
+    transform: scale(0.96);
+}
+
+.social__profile a:active{
+    transform: scale(1);
+}
+
+/* footer */
+
+footer{
+    padding: 15px 0;
+    background-color: rgb(30, 30, 30);
+}
+
+footer h2{
+    text-align: center;
+    font-weight: 300;
+    font-size: 20px;
+}
